@@ -1,0 +1,10 @@
+table {
+
+  transform: translate(33px);
+  background-color: rgba(157, 227, 227, 0.721);
+}
+.kuch {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+}
