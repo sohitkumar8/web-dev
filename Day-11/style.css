@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --tran:  all 0.3s linear;
+}
+
+.button{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(hue, saturation, lightness);
+    display: grid;
+    place-items: center;
+   
+}
+
+a{
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 2.6px 3.2rem;
+    border: 0.1rem solid ;
+    color: white;
+    background-color: red;
+    position:relative;
+     z-index: 1;
+     transition: var(--tran);
+     overflow: hidden;
+     box-shadow: 0 0 20px #333;
+}
+
+a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: var(--tran);
+}
+
+a:hover::before{
+    transform: translateX(0);
+    z-index: -1;
+}
