@@ -38,8 +38,30 @@
     grid-template-rows:200px 200px 200px ;
     grid-gap: 20px;
     place-content: center;
+    grid-template-areas: 
+   " w1 d1"
+   " w2 d2"
+    "w3 d3";
     
 
+}
+#id1{
+    grid-area: w1;
+}
+#id2{
+    grid-area: d1;
+}
+#id3{
+    grid-area: w2;
+}
+#id4{
+    grid-area: d2;
+}
+#id5{
+    grid-area: w3;
+}
+#id6{
+    grid-area: d3;
 }
 
 .box{
@@ -68,5 +90,22 @@ a{
     margin-top: 1px;
 }
 
+@media(max-width:450px){
+    .container2{
+    display: grid;
+    grid-template-columns: 70% ;
+    grid-template-rows:200px 200px 200px 200px 200px 200px ;
+    grid-gap: 20px;
+    grid-template-areas:
+    "w1"
+    "d1"
+    "w2"
+    "d2"
+    "w3"
+    "d3" ;
 
+    place-content: center;
+    
 
+}
+}
