@@ -26,10 +26,10 @@ body {
 
 @keyframes saffron {
   from {
-    width: 0%;
+    transform: translateX(-100%);
   }
   to {
-    width: 100%;
+    transform: translateX(0%);
   }
 }
 
@@ -43,7 +43,7 @@ body {
   width: 100%;
   height: 225px;
   background-color: #138808;
-  transform: translateX(100%, 0%);
+  
 
   animation-name: green;
   animation-duration: 4s;
@@ -53,10 +53,10 @@ body {
 
 @keyframes green {
   from {
-    width: 0%;
+    transform: translateX(100%);
   }
   to {
-    width: 100%;
+    transform: translateX(0%);
   }
 }
 
